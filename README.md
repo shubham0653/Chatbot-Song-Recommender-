@@ -93,7 +93,6 @@ Moodify/
 │
 ├── frontend/       # UI & Chat Interface
 ├── backend/        # APIs & AI Logic
-├── services/       # Emotion + Song Engine
 └── README.md
 ```
 
