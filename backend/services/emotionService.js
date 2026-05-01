@@ -2,6 +2,7 @@ const OpenAI = require("openai");
 
 const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
+  baseURL: process.env.OPENAI_BASE_URL
 });
 
 const analyzeMessage = async (message, conversationHistory = []) => {
@@ -14,7 +15,7 @@ const analyzeMessage = async (message, conversationHistory = []) => {
       : "";
 
     const response = await client.chat.completions.create({
-      model: "gpt-4o-mini",
+     model: "llama-3.3-70b-versatile",
       messages: [
         {
           role: "system",

@@ -23,5 +23,5 @@ const PORT = process.env.PORT || 8000;
 
 // ✅ Fix 2 — Bind to 0.0.0.0 so mobile can reach it
 app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server running on http://192.168.0.105:${PORT}`);
+  console.log(`Server running on http://192.168.0.103:${PORT}`);
 });
